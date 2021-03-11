@@ -1,0 +1,11 @@
+<div class="container">
+    <label>Username via event Binding</label>
+    <input type="text" class="form-control" (input) = "onInputServe($event)">
+    <p>{{username}}</p>
+    
+    <label>Username via two way binding</label>
+    <input type="text" class="form-control" [(ngModel)]= "name">
+    <p>{{name}}</p>
+    
+    <button [disabled]= "name ===''" (click) = "name = ''">Reset Now</button>
+</div>
