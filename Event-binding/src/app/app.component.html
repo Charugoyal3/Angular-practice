@@ -1,0 +1,25 @@
+<h2> Event Binding Example</h2>  
+<button (click)="onSave($event)">Save</button>
+<br>
+<label>Event Binding Using Key Up event</label>
+<input (keyup)="onKeyUp($event)">  
+<p>{{text}}</p> 
+<label>Event Binding Using Key Up Enter event</label>
+<input (keyup.enter)="onKeyUpEnter($event)">  
+<p>{{text2}}</p>
+<label>Event Binding Using Key Up ESC event</label> 
+<input (keyup.esc)="onKeyUpEsc($event)">  
+<p>{{text3}}</p>
+
+<div class="container">
+    <div>
+        <h4>Event Binding @Input and @Output</h4>
+    </div>
+    <div>
+        <h4>Component Interaction</h4>
+        <app-parent (newItemEvent)="addItem($event)"></app-parent>
+        <ul>
+            <li *ngFor="let item of items">{{ item }}</li>
+        </ul>
+    </div>
+</div>
