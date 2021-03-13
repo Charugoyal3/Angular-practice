@@ -1,0 +1,18 @@
+<div>
+<h2>1. Using ngIf</h2>
+  <button (click) = "show()">Show/Hide</button><div *ngIf = "showText">Helooo Trying Ngif</div>
+<h2>2. Using ngClass</h2>
+  <div class="my_class" (click)="clickEvent()"  [ngClass]="status ? 'success' : 'danger'">                
+      Some content
+  </div>
+<h2>3. Using ngFor</h2>
+  <ul>
+    <li *ngFor="let server of servers">{{ server }}</li>
+  </ul>
+<h2>4. Using ngModel</h2>
+  <label >Username</label>
+  <input type="text" [(ngModel)] ="name">
+  <p>{{ name }}</p>
+<h2>5. Using Custom Directive</h2>
+<p appText></p>
+</div>

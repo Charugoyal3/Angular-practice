@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ServersComponent implements OnInit {
 
-  username='TTN';
+  username='TTN';//event
   name="Charu";
   constructor() { }
 
