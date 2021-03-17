@@ -1,0 +1,21 @@
+.btn {
+    cursor: pointer;
+    display: inline-block;
+    padding: 15px 5px;
+    color: #fff;
+    background-color: #3aaedb;
+    border:none;
+    border-radius: 2px;
+    text-transform: uppercase;
+    transition: all 0.2s;
+    font-size: 14px;
+    outline: none;
+    margin: 10px;
+}
+.btn:hover {
+    background-color: #4386bd;
+}
+
+h3{
+    margin:10px;
+}
