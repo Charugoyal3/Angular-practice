@@ -1,0 +1,7 @@
+<h2>Listing Page</h2>
+<hr/>
+<div *ngFor="let product of products">
+    <label>ID: {{ product.id }}</label><br>
+    <span>Name: {{ product.name }}</span><br>
+    <a routerLink="/detail/{{product.id}}">Get Details</a>
+</div>
