@@ -26,6 +26,10 @@
         <option value="Delhi" selected>Delhi</option>
       </select>
     </div>
+    <div id="form-group">
+      <label for="File">Image Upload:</label>
+      <input type="file" class="form-control"  id="myFile" name="filename" ngModel required>
+    </div>
     
     <button class="btn btn-primary" type="submit" [disabled]="!f.valid">Submit</button>
     </form>
