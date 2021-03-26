@@ -3,9 +3,9 @@
 <h3>2. Convert a string  to title case i.e first letter of word should be in capital . </h3>
 <p>{{ string | titlecase}}</p><br/>
 <h3>3. Create a pipe that take a string and reverse the order of letter.</h3>
-<p>{{reverseString | reverse}} </p>
+<p>{{reverseString | reverse}} </p><br/>
 <h3>4. Create a pipe which return no of occurrence  of vowel in string?( String =  "Apple is on table" , Output should be a:2 e:2 i:1 o:1 u:0)</h3>
-
+<p>{{ countstring | count }}</p><br/>
 <h3>5. Using HttpClient make a request to given url and  get the data and show the response in tabular form in a component (Url - https://jsonplaceholder.typicode.com/posts/1/comments)</h3>
 <p *ngIf ="loadedPosts.length <1"> No Post Available</p>
 <table *ngIf ="loadedPosts.length >=1">

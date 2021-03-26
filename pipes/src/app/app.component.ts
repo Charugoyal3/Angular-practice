@@ -9,8 +9,9 @@ import { Get } from './get.model';
 export class AppComponent implements OnInit {
   title = 'pipes';
   todaydate = new Date(9, 2, 1995);
-  string="This is demo of pipes ustom Pipe demo";
-  reverseString="hey, Demo of rcustom pipe";
+  string="This is demo of tile case custom pipe";
+  reverseString="hey, Demo of reverse custom pipe";
+  countstring="Apple is on table";
   loadedPosts:any=[];
 
   constructor(private http:HttpClient){}
