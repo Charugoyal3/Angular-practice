@@ -14,14 +14,14 @@ export class ObservableComponent implements OnInit, OnDestroy {
   constructor() { }
 
   ngOnInit(): void {
-    this.subs = interval(1000).pipe(filter(data => {
-      return data > 5
-      }), map(data => data * 10),
-        tap(el => {
+    this.subs = interval(1000).pipe(
+      filter(data => 
+      {
+        console.log(data);
+        return data > 5
+      }),map(data => data * 10),tap(el => {
           console.log('tapped:-' + el)
-        }),
-        find(el => el % 2 == 0)
-      ).subscribe(data => {
+      }),find(el => el % 2 == 0)).subscribe(data => {
       console.log(data)
     })
   }
