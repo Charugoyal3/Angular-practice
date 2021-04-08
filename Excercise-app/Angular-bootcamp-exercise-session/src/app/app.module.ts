@@ -21,7 +21,7 @@ const appRoutes : Routes = [
     path: 'dashboard', component:DashboardComponent, canActivate:[AuthGuard],resolve:{news:ResolveService}
   },
   {
-    path: 'login',component:AppComponent, pathMatch:'full'
+    path: 'login',component:AppComponent
   },
   {
     path: '404',component: NotfoundComponent
